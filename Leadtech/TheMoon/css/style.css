@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300&display=swap');
  * {
     box-sizing: border-box;
 }
@@ -21,6 +21,35 @@ body {
    
 }
 
+.gallery__item:nth-child(1){
+    grid-column-start:span 1;
+    grid-row-start:span 4;
+    background-image: url(./img/rock.jpg);
+    margin-top: 1rem;
+
+}
+.gallery__item:nth-child(2){
+    grid-column-start:span 3;
+    grid-row-start:span 4;
+    background-image: url(./img/background.jpg);
+    margin-top: 1rem;
+    background-size: cover;
+    
+    z-index: 0;
+    width: 100%;
+   
+    
+}
+.gallery__item:nth-child(3){
+    grid-column-start:span 1;
+    grid-row-start:span 3;
+    margin-top: 1rem;
+    background-size: cover;
+    margin-left: -37vh;
+    z-index: 1;
+    
+
+}
 .gallery__img{
     width:100%;
     height:100%;
@@ -30,93 +59,103 @@ body {
     width:150px;
     display:flex;
     align-items: center;
-   
+    
     
     
 }
 .gallery__title1{
     position:absolute;
-    bottom:10rem;
+    bottom:7rem;
     color:white;
     font-size:86px;
     margin-left: -6rem;
+    font-family: 'Montserrat';
    
 
  }
 .gallery__title2{
     position:absolute;
-    bottom:7rem;
+    bottom:4rem;
     color:white;
     font-size: 75px;
     margin-left: -5rem;
+    font-family: 'Montserrat';
 
  }
  .gallery__title3{
-    position:absolute;
-    bottom:26rem;
-    color:white;
-    font-size: 25px;
-    margin-left: 1rem;
-   
-}
-.gallery__title4{
     position:absolute;
     bottom:23rem;
     color:white;
     font-size: 25px;
     margin-left: 1rem;
+    font-family: 'Merriweather';
+   
+}
+.gallery__title4{
+    position:absolute;
+    bottom:20rem;
+    color:white;
+    font-size: 25px;
+    margin-left: 1rem;
+    font-family: 'Merriweather';
+    font-style: italic;
     
 
  }
  .gallery__title5{
     position:absolute;
-    bottom:21rem;
+    bottom:18rem;
     color:white;
     font-size: 25px;
     margin-left: 1rem;
+    font-family: 'Merriweather';
+    font-style: italic;
     
 
  }
-.gallery__item:nth-child(1){
-    grid-column-start:span 1;
-    grid-row-start:span 5;
-    background-image: url(./img/rock.jpg);
-    margin-top: 8rem;
-
-}
-.gallery__item:nth-child(2){
-       grid-column-start:span 3;
-       grid-row-start:span 5;
-       background-image: url(./img/background.jpg);
-       background-size: cover;
-       margin-top: 8rem;
- 
-}
-.hr {
+.guia {
     border: 0;
-    border-top: 2px solid #999; 
-    border-bottom: 2px solid #333;
-    height:0;
-    }
-
- .gallery__item:nth-child(3){
-    grid-column-start:span 1;
-    grid-row-start:span 3;
-    margin-top: 8rem;
+    border-top: 6px solid #1ABC9B;
+    display: inline-block;
+    width: 18%;
     
+}
 
+.progress-bar {
+    background-color: white;
+    
+    border-radius: 14px;
+  
 } 
+     
+.progress-bar > div {
+    color: white;
+    background: #1ABC9B;
+    padding: 2px;
+    border-radius: 10px;
+   
+       
+} 
+#slider {
+    position: absolute;
+    bottom: 2rem;
+    left: 83vh;
+        
+      
+}
+
 /* @media (min-width:768px){
     .gallery_container{
-        grid-template-columns: repeat(4,1fr); 
+        grid-template-columns: repeat(5,2fr); 
     }
     .gallery__item:nth-child(1){
         grid-column-start:span 2;
+        grid-row-start:span 2
 }
 .gallery__item:nth-child(2){
     grid-row-start:span 2;
-} */
-/* .gallery__item:nth-child(3){
+} 
+.gallery__item:nth-child(3){
     grid-row-start:span 3;
 } */
 /* @media (min-width:1350px){
