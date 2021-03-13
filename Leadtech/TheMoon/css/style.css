@@ -23,68 +23,71 @@ body {
 }
 
 .gallery__item:nth-child(1){
-    grid-column-start:span 1;
+    grid-column-start:span 2;
     grid-row-start:span 5;
     background-image: url(./img/rock.jpg);
     margin-top: 1rem;
 
 }
 .gallery__item:nth-child(2){
-    grid-column-start:span 3;
+    grid-column-start:span 2;
     grid-row-start:span 5;
     background-image: url(./img/background.jpg);
     margin-top: 1rem;
     background-size: cover;
-    z-index: 0;
+    margin-left: -20vh;
+    z-index: 1;
     width: 100%;
    
     
 }
 .gallery__item:nth-child(3){
     grid-column-start:span 1;
-    grid-row-start:span 4;
+    grid-row-start:span 5;
+    background-image: url(./img/background.jpg);
     margin-top: 1rem;
     background-size: cover;
-    margin-left: -25vh;
-    z-index: 1;
+    margin-left: -22vh;
+    z-index: 0;
     
 
 }
 .gallery__img{
-   
     object-fit: cover;
+    width: 66vh;
+    height: 52vh;
+    
+   
+    
 }
 .gallery__img1{
     width:150px;
     margin: 20px 0px 0px 40px;
   
 }
-.gallery__img2{
-    width:90px;
-    margin: 40px 0px 0px 40px;
-}
+
 .gallery__title1{
     position:absolute;
-    bottom:6rem;
+    bottom:9rem;
     color:white;
-    font-size:86px;
-    margin-left: -6rem;
+    font-size:50px;
+    margin-left: -5rem;
     font-family: 'Montserrat';
    
 
  }
 .gallery__title2{
     position:absolute;
-    bottom:3rem;
+    bottom:6rem;
     color:white;
-    font-size: 75px;
-    margin-left: -5rem;
+    font-size: 50px;
+    margin-left: -4rem;
     font-family: 'Montserrat';
 
  }
  .gallery__title3{
     position:absolute;
-    bottom:22rem;
+    bottom:24rem;
     color:white;
     font-size: 25px;
     margin-left: 1rem;
@@ -110,25 +113,21 @@ body {
     margin-left: 1rem;
     font-family: 'Merriweather';
     font-style: italic;
-    
-
+  
  }
 .guia {
     border: 0;
     border-top: 6px solid #1ABC9B;
     display:inline-block;
-    
     width: 15%;
-    
-    
+ 
 }
 
 .progress-bar {
-    width:33%;
-    margin-top:18rem;
+    width:65%;
     background-color: white;
     border-radius: 14px;
-    margin-left: 80vh;
+    margin-left: 5vh;
   
 } 
      
@@ -137,16 +136,36 @@ body {
     background: #1ABC9B;
     padding: 2px;
     border-radius: 10px;
-   
+    margin-right: 60px;
+      
        
 } 
 #slider {
-    position: absolute;
-    bottom: 2rem;
-    left: 83vh;
-        
-      
-}
+    background-color: #0f253a;
+    padding-right: 12px;
+    padding-left:50px;
+    padding-bottom: 15px;
+    width:62%;
+    margin-top: 240px;
+    margin-left: 41vh;
+  }
+  
+  button {
+    margin-left: 10px;
+    margin-top: 185px;
+    border-style: none;
+    background: none;
+    font-family: 'Merriweather';
+    font-size: 10px;
+    color: #0a8f7d;
+  }
+  
+  
+  
+  #viewease{
+    color: white;
+    text-decoration-line: underline;
+  }
 
 /* @media (min-width:768px){
     .gallery_container{
